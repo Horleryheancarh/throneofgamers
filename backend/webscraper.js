@@ -49,7 +49,7 @@ MongoClient.connect('mongodb://localhost:27017', (err, client) => {
 					}
 				})
 
-/*
+
 				// GAMESPOT scrape
 				request('https://www.gamespot.com/news/', (error, response, html) => {
 					if (!error && response.statusCode == 200) {
@@ -94,13 +94,14 @@ MongoClient.connect('mongodb://localhost:27017', (err, client) => {
 									title: title,
 									datetime: datetime,
 									body: body,
+									thumbnail: unity,
 									source: 'https://unity3d.com/public-relations/news'
 								})
 							})
 						})
 					}
 				})
-*/
+
 
 				// ADD more news scrapes here -------->>>>>>>>
 
